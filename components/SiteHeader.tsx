@@ -9,8 +9,10 @@ const navLinks = [
   { href: '/timeline', label: 'Timeline' },
   { href: '/who-represents', label: 'Who Represents' },
   { href: '/public-records', label: 'Public Records' },
-  { href: '/growth-development', label: 'Growth & Development' },
-  { href: '/about', label: 'About & Standards' },
+  { href: '/growth-development', label: 'Growth & Dev' },
+  { href: '/source-health', label: 'Source Health' },
+  { href: '/what-changed', label: 'What Changed?' },
+  { href: '/about', label: 'About' },
 ]
 
 export default function SiteHeader() {
@@ -20,22 +22,22 @@ export default function SiteHeader() {
   return (
     <header className="bg-navy sticky top-0 z-40 shadow-sm">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14">
           {/* Wordmark */}
           <Link href="/" className="no-underline group flex-shrink-0">
             <div className="flex flex-col leading-none">
-              <span className="font-serif text-lg font-semibold text-warm-white group-hover:text-gold-light transition-colors tracking-tight">
+              <span className="font-serif text-base font-semibold text-warm-white group-hover:text-civic-green-muted transition-colors tracking-tight">
                 VillageOfGreenville
-                <span className="text-gold">.com</span>
+                <span className="text-civic-green-muted">.com</span>
               </span>
-              <span className="font-sans text-[0.6rem] font-bold tracking-[0.18em] uppercase text-navy-muted mt-0.5">
+              <span className="font-sans text-[0.55rem] font-bold tracking-[0.18em] uppercase text-navy-muted mt-0.5">
                 The Community Record
               </span>
             </div>
           </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Primary navigation">
+          {/* Desktop nav — xl breakpoint to avoid overflow with 8 items */}
+          <nav className="hidden xl:flex items-center gap-0.5" aria-label="Primary navigation">
             {navLinks.map((link) => {
               const isActive =
                 link.href === '/'
@@ -46,10 +48,10 @@ export default function SiteHeader() {
                   key={link.href}
                   href={link.href}
                   className={`
-                    no-underline px-3 py-1.5 rounded font-sans text-sm font-medium transition-colors
+                    no-underline px-2.5 py-1.5 rounded font-sans text-[0.8rem] font-medium transition-colors whitespace-nowrap
                     ${
                       isActive
-                        ? 'text-gold bg-white/10'
+                        ? 'text-civic-green-muted bg-white/10'
                         : 'text-warm-border hover:text-warm-white hover:bg-white/10'
                     }
                   `}
@@ -63,7 +65,7 @@ export default function SiteHeader() {
 
           {/* Mobile menu button */}
           <button
-            className="lg:hidden text-warm-border hover:text-warm-white transition-colors p-2 rounded"
+            className="xl:hidden text-warm-border hover:text-warm-white transition-colors p-2 rounded"
             onClick={() => setMenuOpen((v) => !v)}
             aria-expanded={menuOpen}
             aria-controls="mobile-nav"
@@ -88,7 +90,7 @@ export default function SiteHeader() {
         {menuOpen && (
           <nav
             id="mobile-nav"
-            className="lg:hidden border-t border-navy-light pb-4 pt-2"
+            className="xl:hidden border-t border-navy-light pb-4 pt-2 grid grid-cols-2 gap-0.5"
             aria-label="Mobile navigation"
           >
             {navLinks.map((link) => {
@@ -105,7 +107,7 @@ export default function SiteHeader() {
                     no-underline block px-3 py-2.5 font-sans text-sm font-medium rounded transition-colors
                     ${
                       isActive
-                        ? 'text-gold bg-white/10'
+                        ? 'text-civic-green-muted bg-white/10'
                         : 'text-warm-border hover:text-warm-white hover:bg-white/10'
                     }
                   `}

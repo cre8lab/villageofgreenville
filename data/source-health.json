@@ -1,0 +1,162 @@
+[
+  {
+    "sourceId": "greenville-main",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Main Village website. Site structure supports HTML change detection. Recommended as the primary reference for any Village-wide notices or announcements."
+  },
+  {
+    "sourceId": "greenville-our-community",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "medium",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Community history page. Specific URL to be confirmed. Supports timeline event citations. Low change frequency expected — not a high-priority monitoring target."
+  },
+  {
+    "sourceId": "greenville-boards",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Boards and Commissions page — primary source for civic roster data. HTML structure supports automated change detection. Changes here trigger a roster review workflow."
+  },
+  {
+    "sourceId": "greenville-staff",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Staff Directory page. HTML structure supports automated change detection. Only official titles and contact emails are captured — no personal contact details."
+  },
+  {
+    "sourceId": "greenville-legal-notices",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Legal Notices and Postings page — primary source for public documents. Document link detection can surface new postings. All detected documents enter a review queue before publication."
+  },
+  {
+    "sourceId": "greenville-elections",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Elections page. HTML change detection planned for election cycle monitoring. Election-night results are unofficial until certified — any results updates are held pending certification."
+  },
+  {
+    "sourceId": "outagamie-election-results",
+    "publisher": "Outagamie County Clerk",
+    "automationReadiness": "high",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Outagamie County election results. Document link detection planned. Unofficial results are clearly labeled. Certified results are published after canvass board completion."
+  },
+  {
+    "sourceId": "myvote-election-results",
+    "publisher": "Wisconsin Elections Commission",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "State-level election reference. Not a structured data endpoint — used for linking residents to official results. No automation planned at this time."
+  },
+  {
+    "sourceId": "myvote-elected-officials",
+    "publisher": "Wisconsin Elections Commission",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Address-lookup tool for elected officials. This site links residents to MyVote directly rather than replicating its data. No automation planned."
+  },
+  {
+    "sourceId": "greenville-gis",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "medium",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "ArcGIS Hub for Village parcel data, zoning, and land use maps. API access may be available via ArcGIS REST endpoints. Medium readiness pending API key and endpoint confirmation."
+  },
+  {
+    "sourceId": "outagamie-gis",
+    "publisher": "Outagamie County",
+    "automationReadiness": "medium",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "County GIS for parcel and property data. Potential integration with County's open data endpoints. URL and access method to be confirmed."
+  },
+  {
+    "sourceId": "wi-doa-population",
+    "publisher": "Wisconsin Department of Administration",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "State population estimates published annually. Data is in Excel or PDF format — manual extraction required. Annual update cycle means monitoring frequency is low."
+  },
+  {
+    "sourceId": "wi-dor-taxes",
+    "publisher": "Wisconsin Department of Revenue",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Town, Village and City tax data published annually. Manual data extraction required. Annual update cycle."
+  },
+  {
+    "sourceId": "comp-land-use-plan-2040",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Planning document — static once adopted. Direct URL to be confirmed. No automated monitoring needed; monitor for amendments via legal notices."
+  },
+  {
+    "sourceId": "future-land-use-map",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "medium",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Available via ArcGIS Hub. Map layer changes can be monitored via ArcGIS REST API. Medium readiness."
+  },
+  {
+    "sourceId": "bicycle-pedestrian-plan",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Planning document — static once adopted. Direct URL to be confirmed."
+  },
+  {
+    "sourceId": "sub-area-plan",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Planning document — static once adopted. Direct URL to be confirmed."
+  },
+  {
+    "sourceId": "water-system-master-plan",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Infrastructure planning document. Static once adopted. Direct URL to be confirmed."
+  },
+  {
+    "sourceId": "wastewater-system-master-plan",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "registered",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Infrastructure planning document. Static once adopted. Direct URL to be confirmed."
+  },
+  {
+    "sourceId": "outdoor-recreation-plan-2040",
+    "publisher": "Village of Greenville",
+    "automationReadiness": "low",
+    "reviewStatus": "reviewed",
+    "lastReviewed": "2026-05-01",
+    "publicNotes": "Referenced in Resolution No. 6-26 (2026). Document posted on Legal Notices page."
+  }
+]

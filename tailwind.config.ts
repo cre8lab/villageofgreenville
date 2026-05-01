@@ -9,12 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: '#F2EFE5',
+        cream: '#F0F4EF',
         navy: {
           DEFAULT: '#162B44',
           dark: '#0F1E30',
           light: '#243F5F',
           muted: '#3A566E',
+        },
+        civic: {
+          green: '#2B5744',
+          'green-dark': '#1E3D30',
+          'green-light': '#3D7A60',
+          'green-pale': '#E8F2EC',
+          'green-muted': '#8AB5A0',
+          'green-border': '#B5D4C4',
         },
         gold: {
           DEFAULT: '#A8721E',
@@ -23,11 +31,11 @@ const config: Config = {
           pale: '#F7F0DC',
         },
         warm: {
-          white: '#FDFBF5',
-          border: '#D2CCBC',
-          'border-strong': '#AFA898',
-          text: '#4A4A5A',
-          muted: '#7A7A8A',
+          white: '#FAFDF8',
+          border: '#C8D2C5',
+          'border-strong': '#A8B4A4',
+          text: '#4A5248',
+          muted: '#7A8278',
         },
         status: {
           official: '#155A38',
@@ -57,9 +65,6 @@ const config: Config = {
       },
       maxWidth: {
         '8xl': '88rem',
-      },
-      backgroundImage: {
-        'grain': "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E\")",
       },
     },
   },

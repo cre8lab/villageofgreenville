@@ -10,6 +10,16 @@
     "lastChecked": "2026-05-01"
   },
   {
+    "id": "greenville-our-community",
+    "name": "Village of Greenville — Our Community (History)",
+    "url": "https://www.townofgreenville.com/about/our_community.php",
+    "type": "official_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "html_change_detection",
+    "note": "Official Village page documenting community history, including founding dates and name changes. Specific subpage URL should be verified against the current site.",
+    "lastChecked": "2026-05-01"
+  },
+  {
     "id": "greenville-boards",
     "name": "Boards and Commissions — Village of Greenville",
     "url": "https://www.townofgreenville.com/government/boards_and_commissions.php",
@@ -117,6 +127,76 @@
     "trustTier": "primary_official",
     "monitoringMethod": null,
     "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "comp-land-use-plan-2040",
+    "name": "2040 Comprehensive Land Use Plan — Village of Greenville",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Specific document URL to be confirmed from the Village website. References the Village's long-range land use planning document.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "future-land-use-map",
+    "name": "Future Land Use Map — Village of Greenville",
+    "url": "https://village-of-greenville-greenville-wi.hub.arcgis.com/",
+    "type": "official_gis_hub",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Available via the Village ArcGIS Hub. Depicts planned land use designations for Village parcels.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "bicycle-pedestrian-plan",
+    "name": "Bicycle and Pedestrian Plan — Village of Greenville",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Specific document URL to be confirmed from the Village website.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "sub-area-plan",
+    "name": "Sub-Area Plan — Village of Greenville",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Specific document URL to be confirmed from the Village website.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "water-system-master-plan",
+    "name": "Water System Master Plan — Village of Greenville",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Specific document URL to be confirmed from the Village website.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "wastewater-system-master-plan",
+    "name": "Wastewater System Master Plan — Village of Greenville",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Specific document URL to be confirmed from the Village website.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "outdoor-recreation-plan-2040",
+    "name": "Comprehensive Outdoor Recreation Plan 2026–2030 — Village of Greenville",
+    "url": "https://www.townofgreenville.com/government/legal_notices_and_postings.php",
+    "type": "official_document",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Referenced in Resolution No. 6-26. The plan document itself was adopted as part of that resolution.",
     "lastChecked": "2026-05-01"
   }
 ]

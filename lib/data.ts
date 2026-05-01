@@ -3,6 +3,9 @@ import civicRosterData from '@/data/civic-roster.json'
 import timelineData from '@/data/timeline.json'
 import documentsData from '@/data/documents.json'
 import editorialStandardsData from '@/data/editorial-standards.json'
+import sourceHealthData from '@/data/source-health.json'
+import changeLogData from '@/data/change-log.json'
+import growthSignalsData from '@/data/growth-signals.json'
 
 import type {
   Source,
@@ -10,7 +13,12 @@ import type {
   TimelineEvent,
   PublicDocument,
   EditorialPrinciple,
+  SourceHealth,
+  ChangeLogEntry,
+  GrowthSignal,
 } from '@/types'
+
+// ─── Sources ─────────────────────────────────────────────────────────────────
 
 export function getSources(): Source[] {
   return sourcesData as Source[]
@@ -20,20 +28,22 @@ export function getSourceById(id: string): Source | undefined {
   return (sourcesData as Source[]).find((s) => s.id === id)
 }
 
+// ─── Civic roster ─────────────────────────────────────────────────────────────
+
 export function getCivicRoster(): CivicMember[] {
   return civicRosterData as CivicMember[]
 }
+
+// ─── Timeline ─────────────────────────────────────────────────────────────────
 
 export function getTimeline(): TimelineEvent[] {
   return (timelineData as TimelineEvent[]).sort((a, b) => a.year - b.year)
 }
 
+// ─── Documents ────────────────────────────────────────────────────────────────
+
 export function getDocuments(): PublicDocument[] {
   return documentsData as PublicDocument[]
-}
-
-export function getEditorialStandards(): EditorialPrinciple[] {
-  return editorialStandardsData as EditorialPrinciple[]
 }
 
 export function getDocumentsByCategory(): Record<string, PublicDocument[]> {
@@ -46,4 +56,46 @@ export function getDocumentsByCategory(): Record<string, PublicDocument[]> {
     },
     {} as Record<string, PublicDocument[]>
   )
+}
+
+// ─── Editorial standards ──────────────────────────────────────────────────────
+
+export function getEditorialStandards(): EditorialPrinciple[] {
+  return editorialStandardsData as EditorialPrinciple[]
+}
+
+// ─── Source health registry ───────────────────────────────────────────────────
+
+export function getSourceHealth(): SourceHealth[] {
+  return sourceHealthData as SourceHealth[]
+}
+
+export function getSourceHealthById(sourceId: string): SourceHealth | undefined {
+  return (sourceHealthData as SourceHealth[]).find((h) => h.sourceId === sourceId)
+}
+
+export function getSourceWithHealth(): Array<{ source: Source; health: SourceHealth | undefined }> {
+  const sources = getSources()
+  return sources.map((source) => ({
+    source,
+    health: getSourceHealthById(source.id),
+  }))
+}
+
+// ─── Change log ───────────────────────────────────────────────────────────────
+
+export function getChangeLog(): ChangeLogEntry[] {
+  return (changeLogData as ChangeLogEntry[]).sort(
+    (a, b) => new Date(b.dateDetected).getTime() - new Date(a.dateDetected).getTime()
+  )
+}
+
+// ─── Growth signals ───────────────────────────────────────────────────────────
+
+export function getGrowthSignals(): GrowthSignal[] {
+  return growthSignalsData as GrowthSignal[]
+}
+
+export function getGrowthSignalById(id: string): GrowthSignal | undefined {
+  return (growthSignalsData as GrowthSignal[]).find((g) => g.id === id)
 }

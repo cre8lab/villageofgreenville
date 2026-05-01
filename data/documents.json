@@ -4,59 +4,64 @@
     "title": "Resolution No. 6-26 — Adopting the Village of Greenville Comprehensive Outdoor Recreation Plan 2026–2030",
     "type": "resolution",
     "date": null,
-    "status": "adopted",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
     "sourceId": "greenville-legal-notices",
-    "reviewStatus": "reviewed",
     "category": "Planning & Recreation",
     "url": null,
-    "notes": "Adopts the five-year outdoor recreation plan for Village parks and open space."
+    "notes": "Posted on the Village Legal Notices page. Document title references adoption of the five-year outdoor recreation plan. Formal adoption has not been independently verified against meeting minutes."
   },
   {
     "id": "res-7-26",
     "title": "Resolution No. 7-26 — Approving a Special Exception for a CSM in Comprehensive Plan Tier II Parcels #111077403 and 111077402",
     "type": "resolution",
     "date": null,
-    "status": "adopted",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
     "sourceId": "greenville-legal-notices",
-    "reviewStatus": "reviewed",
     "category": "Land Use & Zoning",
     "url": null,
-    "notes": "Approves a Certified Survey Map (CSM) special exception for two Tier II parcels."
+    "notes": "Posted on the Village Legal Notices page. References approval of a Certified Survey Map (CSM) special exception for two Tier II parcels. Formal adoption not independently verified."
   },
   {
     "id": "res-13-26",
     "title": "Resolution No. 13-26 — Approving an Amended Project Plan and Boundaries for TID District No. 1, Village of Greenville",
     "type": "resolution",
     "date": null,
-    "status": "adopted",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
     "sourceId": "greenville-legal-notices",
-    "reviewStatus": "reviewed",
     "category": "Finance & Development",
     "url": null,
-    "notes": "Amends the Tax Increment Financing (TIF) District No. 1 project plan and boundary."
+    "notes": "Posted on the Village Legal Notices page. Amends the Tax Increment Financing (TIF) District No. 1 project plan and boundary. Formal adoption not independently verified."
   },
   {
     "id": "ord-6-26",
     "title": "Ordinance No. 6-26 — Amending Chapter 23 Fire Commission",
     "type": "ordinance",
     "date": null,
-    "status": "adopted",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
     "sourceId": "greenville-legal-notices",
-    "reviewStatus": "reviewed",
     "category": "Public Safety",
     "url": null,
-    "notes": "Amends Village Code Chapter 23 relating to the Fire Commission structure or powers."
+    "notes": "Posted on the Village Legal Notices page. Amends Village Code Chapter 23 relating to the Fire Commission. Formal adoption not independently verified."
   },
   {
     "id": "ord-2-26",
     "title": "Ordinance No. 2-26 — Amending the Village of Greenville Zoning Map",
     "type": "ordinance",
     "date": null,
-    "status": "adopted",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
     "sourceId": "greenville-legal-notices",
-    "reviewStatus": "reviewed",
     "category": "Land Use & Zoning",
     "url": null,
-    "notes": "Updates the official Village zoning map, likely reflecting rezoning of one or more parcels."
+    "notes": "Posted on the Village Legal Notices page. Updates the official Village zoning map. Formal adoption not independently verified."
   }
 ]

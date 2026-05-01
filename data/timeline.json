@@ -4,15 +4,15 @@
     "year": 1848,
     "event": "Greenville Founded as Greenville Station",
     "detail": "The area that would become Greenville was first settled and established as Greenville Station, a stop along early Wisconsin transportation routes.",
-    "sourceId": null,
+    "sourceId": "greenville-our-community",
     "category": "founding"
   },
   {
     "id": "1879-becker",
     "year": 1879,
     "event": "Name Changed to Becker",
-    "detail": "The community's name was changed to Becker, reflecting changes in the local community identity.",
-    "sourceId": null,
+    "detail": "The community's name was changed to Becker, reflecting changes in the local community identity during this period.",
+    "sourceId": "greenville-our-community",
     "category": "name-change"
   },
   {
@@ -20,15 +20,15 @@
     "year": 1896,
     "event": "Established as Town of Greenville",
     "detail": "The community adopted the name Town of Greenville, formalizing its municipal identity under Wisconsin's township government structure.",
-    "sourceId": null,
+    "sourceId": "greenville-our-community",
     "category": "incorporation"
   },
   {
     "id": "2021-village",
     "year": 2021,
     "event": "Incorporated as Village of Greenville",
-    "detail": "After years of rapid growth, the community voted to incorporate as the Village of Greenville under Wisconsin statutes, transitioning from town government to village governance.",
-    "sourceId": "greenville-main",
+    "detail": "After years of rapid growth, the community voted to incorporate as the Village of Greenville under Wisconsin statutes, transitioning from town government to village governance with a Village President and Board of Trustees.",
+    "sourceId": "greenville-our-community",
     "category": "incorporation"
   }
 ]

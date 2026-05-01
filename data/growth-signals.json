@@ -1,0 +1,137 @@
+[
+  {
+    "id": "population",
+    "topic": "Population",
+    "description": "Wisconsin DOA publishes annual population estimates for all municipalities. Greenville has grown rapidly since incorporation in 2021, reflecting broader Fox Cities regional growth.",
+    "primarySourceId": "wi-doa-population",
+    "planningDocId": null,
+    "status": "source_registered",
+    "stats": [
+      { "label": "Incorporated", "value": "2021" },
+      { "label": "County", "value": "Outagamie" },
+      { "label": "ZIP Code", "value": "54942" },
+      { "label": "Data source", "value": "WI DOA" }
+    ],
+    "pendingNote": "Registered source — annual population figure extraction pending"
+  },
+  {
+    "id": "land-use",
+    "topic": "Land Use",
+    "description": "The Village GIS hub and 2040 Comprehensive Land Use Plan document zoning districts, comprehensive plan tiers, and future land use designations. Zoning map amendments are tracked in the Public Records index.",
+    "primarySourceId": "greenville-gis",
+    "planningDocId": "comp-land-use-plan-2040",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Zoning authority", "value": "Village Board" },
+      { "label": "Comp plan tiers", "value": "I, II, III" },
+      { "label": "Active TIF districts", "value": "No. 1" },
+      { "label": "GIS source", "value": "ArcGIS Hub" }
+    ],
+    "pendingNote": "Registered source — detailed parcel data extraction pending"
+  },
+  {
+    "id": "tid-districts",
+    "topic": "TID Districts",
+    "description": "Tax Increment Financing (TIF) districts are used by the Village to support economic development. TID District No. 1 was amended in 2026 via Resolution No. 13-26.",
+    "primarySourceId": "greenville-legal-notices",
+    "planningDocId": null,
+    "status": "source_registered",
+    "stats": [
+      { "label": "Known TIF districts", "value": "No. 1" },
+      { "label": "Status", "value": "Active" },
+      { "label": "Last amendment", "value": "Resolution 13-26" },
+      { "label": "Source", "value": "Legal Notices" }
+    ],
+    "pendingNote": "District boundaries and financials to be sourced from official TIF reports"
+  },
+  {
+    "id": "transportation",
+    "topic": "Transportation",
+    "description": "The Village Bicycle and Pedestrian Plan documents non-motorized transportation infrastructure. Road network data is available via the GIS hub and Outagamie County.",
+    "primarySourceId": "greenville-gis",
+    "planningDocId": "bicycle-pedestrian-plan",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Planning doc", "value": "Bike & Ped Plan" },
+      { "label": "GIS source", "value": "ArcGIS Hub" },
+      { "label": "County data", "value": "Outagamie GIS" },
+      { "label": "Extraction", "value": "Pending" }
+    ],
+    "pendingNote": "Registered source — transportation network data extraction pending"
+  },
+  {
+    "id": "parks-recreation",
+    "topic": "Parks & Recreation",
+    "description": "The Comprehensive Outdoor Recreation Plan 2026–2030 (Resolution No. 6-26) governs Village park planning through 2030. Park locations are available via the GIS hub.",
+    "primarySourceId": "outdoor-recreation-plan-2040",
+    "planningDocId": "outdoor-recreation-plan-2040",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Active plan", "value": "CORP 2026–2030" },
+      { "label": "Governing resolution", "value": "No. 6-26" },
+      { "label": "Plan period", "value": "2026 – 2030" },
+      { "label": "Source", "value": "Legal Notices" }
+    ],
+    "pendingNote": "Registered source — park inventory and plan details extraction pending"
+  },
+  {
+    "id": "water-wastewater",
+    "topic": "Water / Wastewater",
+    "description": "The Village operates a municipal water and wastewater system. Master plans govern long-range infrastructure investment for both systems.",
+    "primarySourceId": "greenville-main",
+    "planningDocId": "water-system-master-plan",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Water plan", "value": "Registered" },
+      { "label": "Wastewater plan", "value": "Registered" },
+      { "label": "Operating authority", "value": "Village of Greenville" },
+      { "label": "Document URLs", "value": "To be confirmed" }
+    ],
+    "pendingNote": "Registered sources — document URLs and system data extraction pending"
+  },
+  {
+    "id": "public-works",
+    "topic": "Public Works",
+    "description": "Village Public Works covers street maintenance, snow removal, and infrastructure operations. Department information is available via the Village staff directory.",
+    "primarySourceId": "greenville-main",
+    "planningDocId": null,
+    "status": "source_registered",
+    "stats": [
+      { "label": "Data source", "value": "Village website" },
+      { "label": "Department contact", "value": "Staff Directory" },
+      { "label": "GIS data", "value": "ArcGIS Hub" },
+      { "label": "Extraction", "value": "Pending" }
+    ],
+    "pendingNote": "Registered source — Public Works data and budget information extraction pending"
+  },
+  {
+    "id": "gis-maps",
+    "topic": "GIS & Maps",
+    "description": "Village GIS data is available via the ArcGIS Hub and Outagamie County GIS. Layers include parcels, zoning, future land use, and infrastructure.",
+    "primarySourceId": "greenville-gis",
+    "planningDocId": "future-land-use-map",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Village GIS", "value": "ArcGIS Hub" },
+      { "label": "County GIS", "value": "Outagamie County" },
+      { "label": "Automation readiness", "value": "Medium" },
+      { "label": "API access", "value": "To be confirmed" }
+    ],
+    "pendingNote": "Registered sources — ArcGIS REST API integration planned"
+  },
+  {
+    "id": "development-records",
+    "topic": "Development Records",
+    "description": "Development activity — CSMs, special exceptions, rezoning, and permit records — is tracked through Village Legal Notices, Board minutes, and the sub-area planning documents.",
+    "primarySourceId": "greenville-legal-notices",
+    "planningDocId": "sub-area-plan",
+    "status": "source_registered",
+    "stats": [
+      { "label": "Primary source", "value": "Legal Notices" },
+      { "label": "Secondary source", "value": "Sub-Area Plan" },
+      { "label": "2026 CSM actions", "value": "Resolution 7-26" },
+      { "label": "Extraction", "value": "In progress" }
+    ],
+    "pendingNote": "Registered source — development permit and CSM data extraction in progress via Legal Notices monitoring"
+  }
+]

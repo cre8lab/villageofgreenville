@@ -3,49 +3,57 @@
 @tailwind utilities;
 
 :root {
-  /* Brand palette */
-  --cream: #F2EFE5;
+  /* Navy — primary dark */
   --navy: #162B44;
   --navy-dark: #0F1E30;
   --navy-light: #243F5F;
+  --navy-muted: #3A566E;
+
+  /* Civic green — primary accent */
+  --civic-green: #2B5744;
+  --civic-green-dark: #1E3D30;
+  --civic-green-light: #3D7A60;
+  --civic-green-pale: #E8F2EC;
+  --civic-green-muted: #8AB5A0;
+  --civic-green-border: #B5D4C4;
+
+  /* Gold — secondary accent, trust/official signals */
   --gold: #A8721E;
   --gold-light: #C28E35;
   --gold-muted: #E2C98A;
   --gold-pale: #F7F0DC;
 
-  /* Typography */
-  --text-primary: #1C1C2C;
-  --text-secondary: #4A4A5A;
-  --text-muted: #7A7A8A;
-
   /* Surfaces */
-  --bg-body: #F2EFE5;
-  --bg-card: #FDFBF5;
-  --bg-inset: #EAE6D8;
+  --cream: #F0F4EF;
+  --bg-body: #F0F4EF;
+  --bg-card: #FAFDF8;
+  --bg-inset: #E4EDE7;
+
+  /* Text */
+  --text-primary: #1A1C1A;
+  --text-secondary: #4A5248;
+  --text-muted: #7A8278;
 
   /* Borders */
-  --border: #D2CCBC;
-  --border-strong: #AFA898;
+  --border: #C8D2C5;
+  --border-strong: #A8B4A4;
 
   /* Status palette */
-  --official: #155A38;
-  --official-bg: #E5F4ED;
-  --official-border: #9ACFB4;
-  --pending: #8B4500;
-  --pending-bg: #FEF3E2;
-  --pending-border: #F0BE78;
-  --superseded: #7F1414;
-  --superseded-bg: #FDEBEB;
-  --superseded-border: #F0A8A8;
-  --unofficial: #173B7A;
-  --unofficial-bg: #EBF0FF;
-  --unofficial-border: #A8BEF5;
-  --adopted: #155A38;
-  --adopted-bg: #E5F4ED;
-  --adopted-border: #9ACFB4;
-  --needs-review: #6B4000;
-  --needs-review-bg: #FEF0D8;
-  --needs-review-border: #EDB968;
+  --status-official: #155A38;
+  --status-official-bg: #E5F4ED;
+  --status-official-border: #9ACFB4;
+  --status-pending: #8B4500;
+  --status-pending-bg: #FEF3E2;
+  --status-pending-border: #F0BE78;
+  --status-superseded: #7F1414;
+  --status-superseded-bg: #FDEBEB;
+  --status-superseded-border: #F0A8A8;
+  --status-unofficial: #173B7A;
+  --status-unofficial-bg: #EBF0FF;
+  --status-unofficial-border: #A8BEF5;
+  --status-needs-review: #6B4000;
+  --status-needs-review-bg: #FEF0D8;
+  --status-needs-review-border: #EDB968;
 }
 
 @layer base {
@@ -76,12 +84,12 @@
   }
 
   a:hover {
-    color: var(--gold);
+    color: var(--civic-green);
   }
 }
 
 @layer components {
-  /* Civic gold rule — a thin accent line used as a heading decoration */
+  /* Civic green rule — section accent line */
   .civic-rule {
     position: relative;
     padding-top: 0.75rem;
@@ -93,12 +101,7 @@
     left: 0;
     width: 2.5rem;
     height: 2px;
-    background-color: var(--gold);
-  }
-
-  /* Full-width version */
-  .civic-rule-full::before {
-    width: 100%;
+    background-color: var(--civic-green);
   }
 
   /* Section label — small uppercase category marker */
@@ -108,7 +111,7 @@
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--civic-green);
   }
 
   /* Card base */
@@ -125,6 +128,14 @@
   /* Inset block — for notices, callouts */
   .inset-block {
     background-color: var(--bg-inset);
+    border-left: 3px solid var(--civic-green);
+    padding: 1rem 1.25rem;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Gold inset — for independence/trust notices */
+  .inset-block-gold {
+    background-color: var(--gold-pale);
     border-left: 3px solid var(--gold);
     padding: 1rem 1.25rem;
     border-radius: 0 4px 4px 0;
@@ -161,7 +172,30 @@
   }
 
   .civic-table tr:hover td {
-    background-color: var(--gold-pale);
+    background-color: var(--civic-green-pale);
+  }
+
+  /* Dashboard metric card */
+  .metric-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--civic-green);
+    border-radius: 0 4px 4px 0;
+    padding: 1.25rem;
+  }
+
+  /* Signal status pill */
+  .signal-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: var(--font-mulish), system-ui, sans-serif;
   }
 }
 
@@ -169,6 +203,26 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Topographic / grid hero background */
+.topo-bg {
+  position: relative;
+  background-image:
+    radial-gradient(ellipse at 75% 40%, rgba(43, 87, 68, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 80%, rgba(22, 43, 68, 0.05) 0%, transparent 50%);
+}
+
+.topo-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(43, 87, 68, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(43, 87, 68, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 30%, rgba(0,0,0,0.6) 70%, transparent 100%);
 }
 
 /* Grain texture overlay */
@@ -180,7 +234,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.03;
+  opacity: 0.025;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 200px 200px;
 }

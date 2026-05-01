@@ -1,0 +1,57 @@
+[
+  {
+    "id": "chg-001",
+    "changeTitle": "Legal Notices page indexed — 5 documents from 2026 catalogued",
+    "sourceId": "greenville-legal-notices",
+    "changeType": "document_indexed",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "The Village Legal Notices and Postings page was manually reviewed. Five 2026 documents were identified: Resolution No. 6-26 (Outdoor Recreation Plan), Resolution No. 7-26 (CSM Special Exception), Resolution No. 13-26 (TID District No. 1 Amendment), Ordinance No. 6-26 (Fire Commission), and Ordinance No. 2-26 (Zoning Map Amendment). All five were indexed with documentStatus: official_document_posted. Civic adoption status was not independently verified.",
+    "linkToSource": "https://www.townofgreenville.com/government/legal_notices_and_postings.php"
+  },
+  {
+    "id": "chg-002",
+    "changeTitle": "Village Board roster verified — 5 current members confirmed",
+    "sourceId": "greenville-boards",
+    "changeType": "roster_verified",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "The Village of Greenville Boards and Commissions page was reviewed. Village Board consists of: Jack Anderson (Village President, elected April 2025), Andy Peters (Trustee, elected April 2025), Dean Culbertson (Trustee, elected April 2025), Mark Strobel (Trustee, elected April 2026), Brittany Helf (Trustee, elected April 2026). Residential addresses were not recorded.",
+    "linkToSource": "https://www.townofgreenville.com/government/boards_and_commissions.php"
+  },
+  {
+    "id": "chg-003",
+    "changeTitle": "Greenville history timeline verified against Our Community page",
+    "sourceId": "greenville-our-community",
+    "changeType": "timeline_verified",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "All four timeline events (1848 founding as Greenville Station, 1879 name change to Becker, 1896 establishment as Town of Greenville, 2021 incorporation as Village) were verified against the official Village Our Community page. All events now cite this official source. The Our Community page URL should be confirmed against the current Village website structure.",
+    "linkToSource": "https://www.townofgreenville.com/about/our_community.php"
+  },
+  {
+    "id": "chg-004",
+    "changeTitle": "Planning source registered — 2040 Comprehensive Land Use Plan",
+    "sourceId": "comp-land-use-plan-2040",
+    "changeType": "source_registered",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "The 2040 Comprehensive Land Use Plan was registered as an official source. The specific document URL needs to be confirmed from the Village website. This source supports the Land Use growth signal. Future automation will monitor the Legal Notices page for any plan amendments.",
+    "linkToSource": "https://greenvillewi.gov/"
+  },
+  {
+    "id": "chg-005",
+    "changeTitle": "20 official sources registered in the source registry",
+    "sourceId": null,
+    "changeType": "source_registered",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "Initial source registry populated with 20 official sources across Village, county, and state levels. Sources span: Village government pages (6), state data sources (2), county resources (2), GIS hubs (2), state lookup tools (2), and planning documents (6). All sources are classified with trust tier (primary_official) and automation readiness (high/medium/low). Future automation will run against the 7 sources with high automation readiness.",
+    "linkToSource": null
+  }
+]
