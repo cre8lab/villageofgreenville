@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { getSources, getCivicRoster, getTimeline, getDocuments } from '@/lib/data'
-import StatusBadge from '@/components/StatusBadge'
+import StatusBadge, { DocumentStatusBadge } from '@/components/StatusBadge'
 import SourceBadge from '@/components/SourceBadge'
 
 export const metadata = {
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <span className="font-serif text-3xl font-semibold text-navy">{primaryOfficialSources.length}</span>
                 <SourceBadge tier="primary_official" />
               </div>
-              <p className="font-sans text-sm text-warm-text">Primary official sources currently monitored, including Village, county, and state records.</p>
+              <p className="font-sans text-sm text-warm-text">Primary official sources registered and reviewed, including Village, county, and state records.</p>
               <div className="mt-4 space-y-1">
                 {primaryOfficialSources.slice(0, 4).map((s) => (
                   <div key={s.id} className="text-xs font-sans text-warm-muted truncate">{s.name}</div>
@@ -299,9 +299,14 @@ export default function HomePage() {
             const source = sources.find((s) => s.id === doc.sourceId)
             return (
               <div key={doc.id} className="card p-5">
-                <div className="flex items-center justify-between gap-2 mb-3">
+                <div className="flex items-start justify-between gap-2 mb-3">
                   <span className="section-label">{doc.type} &middot; {doc.category}</span>
-                  <StatusBadge status={doc.status} />
+                  <DocumentStatusBadge
+                    documentStatus={doc.documentStatus}
+                    reviewStatus={doc.reviewStatus}
+                    civicStatus={doc.civicStatus}
+                    className="flex-shrink-0"
+                  />
                 </div>
                 <p className="font-serif text-base font-medium text-navy leading-snug mb-2">{doc.title}</p>
                 {doc.notes && <p className="font-sans text-sm text-warm-text">{doc.notes}</p>}

@@ -3,7 +3,7 @@
     "id": "res-6-26",
     "title": "Resolution No. 6-26 — Adopting the Village of Greenville Comprehensive Outdoor Recreation Plan 2026–2030",
     "type": "resolution",
-    "date": null,
+    "date": "2026-04-20",
     "documentStatus": "official_document_posted",
     "reviewStatus": "reviewed_source_link",
     "civicStatus": "adoption_status_not_independently_verified",
@@ -16,7 +16,7 @@
     "id": "res-7-26",
     "title": "Resolution No. 7-26 — Approving a Special Exception for a CSM in Comprehensive Plan Tier II Parcels #111077403 and 111077402",
     "type": "resolution",
-    "date": null,
+    "date": "2026-04-20",
     "documentStatus": "official_document_posted",
     "reviewStatus": "reviewed_source_link",
     "civicStatus": "adoption_status_not_independently_verified",
@@ -26,10 +26,36 @@
     "notes": "Posted on the Village Legal Notices page. References approval of a Certified Survey Map (CSM) special exception for two Tier II parcels. Formal adoption not independently verified."
   },
   {
+    "id": "res-8-26",
+    "title": "Resolution No. 8-26 — Approving a Special Exception for Home Business Located at N952 Fox Springs Drive, Parcel 111080215",
+    "type": "resolution",
+    "date": "2026-04-20",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
+    "sourceId": "greenville-legal-notices",
+    "category": "Land Use & Zoning",
+    "url": null,
+    "notes": "Posted on the Village Legal Notices page. References approval of a special exception for a home business use. Residential address is not displayed on this site. Formal adoption not independently verified."
+  },
+  {
+    "id": "res-10-26",
+    "title": "Resolution No. 10-26 — Approving a CSM for Parcels 111048000 and 111048100",
+    "type": "resolution",
+    "date": "2026-04-20",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
+    "sourceId": "greenville-legal-notices",
+    "category": "Land Use & Zoning",
+    "url": null,
+    "notes": "Posted on the Village Legal Notices page. References approval of a Certified Survey Map (CSM) for two parcels. Formal adoption not independently verified."
+  },
+  {
     "id": "res-13-26",
     "title": "Resolution No. 13-26 — Approving an Amended Project Plan and Boundaries for TID District No. 1, Village of Greenville",
     "type": "resolution",
-    "date": null,
+    "date": "2026-04-20",
     "documentStatus": "official_document_posted",
     "reviewStatus": "reviewed_source_link",
     "civicStatus": "adoption_status_not_independently_verified",
@@ -42,7 +68,7 @@
     "id": "ord-6-26",
     "title": "Ordinance No. 6-26 — Amending Chapter 23 Fire Commission",
     "type": "ordinance",
-    "date": null,
+    "date": "2026-04-20",
     "documentStatus": "official_document_posted",
     "reviewStatus": "reviewed_source_link",
     "civicStatus": "adoption_status_not_independently_verified",
@@ -52,10 +78,23 @@
     "notes": "Posted on the Village Legal Notices page. Amends Village Code Chapter 23 relating to the Fire Commission. Formal adoption not independently verified."
   },
   {
+    "id": "ord-4-26",
+    "title": "Ordinance No. 4-26 — Amending the Village of Greenville Zoning Map",
+    "type": "ordinance",
+    "date": "2026-02-19",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
+    "sourceId": "greenville-legal-notices",
+    "category": "Land Use & Zoning",
+    "url": null,
+    "notes": "Posted on the Village Legal Notices page. Updates the official Village zoning map. Earlier document date suggests a separate meeting or action from the April 2026 items. Formal adoption not independently verified."
+  },
+  {
     "id": "ord-2-26",
     "title": "Ordinance No. 2-26 — Amending the Village of Greenville Zoning Map",
     "type": "ordinance",
-    "date": null,
+    "date": "2026-03-26",
     "documentStatus": "official_document_posted",
     "reviewStatus": "reviewed_source_link",
     "civicStatus": "adoption_status_not_independently_verified",
@@ -63,5 +102,18 @@
     "category": "Land Use & Zoning",
     "url": null,
     "notes": "Posted on the Village Legal Notices page. Updates the official Village zoning map. Formal adoption not independently verified."
+  },
+  {
+    "id": "rfq-legal-services-2026",
+    "title": "RFQ for Legal Services — Village of Greenville",
+    "type": "notice",
+    "date": "2026-01-29",
+    "documentStatus": "official_document_posted",
+    "reviewStatus": "reviewed_source_link",
+    "civicStatus": "adoption_status_not_independently_verified",
+    "sourceId": "greenville-legal-notices",
+    "category": "Administration",
+    "url": null,
+    "notes": "Posted on the Village Legal Notices page as a Request for Qualifications (RFQ) for legal services. Document date 01-29-2026."
   }
 ]

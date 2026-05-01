@@ -1,5 +1,5 @@
 import type { PublicDocument } from '@/types'
-import StatusBadge from './StatusBadge'
+import { DocumentStatusBadge } from './StatusBadge'
 import SourceBadge from './SourceBadge'
 import type { Source } from '@/types'
 
@@ -21,7 +21,12 @@ export default function RecordCard({ document, source }: RecordCardProps) {
     <article className="card p-5 transition-all duration-150 hover:shadow-sm group">
       <div className="flex items-start justify-between gap-3 mb-3">
         <span className="section-label">{typeLabels[document.type]} &middot; {document.category}</span>
-        <StatusBadge status={document.status} className="flex-shrink-0" />
+        <DocumentStatusBadge
+          documentStatus={document.documentStatus}
+          reviewStatus={document.reviewStatus}
+          civicStatus={document.civicStatus}
+          className="flex-shrink-0"
+        />
       </div>
 
       <h3 className="font-serif text-base font-semibold text-navy leading-snug mb-3 group-hover:text-navy-light transition-colors">
@@ -48,7 +53,7 @@ export default function RecordCard({ document, source }: RecordCardProps) {
           {document.date && (
             <span className="text-xs font-sans text-warm-muted">{document.date}</span>
           )}
-          {document.reviewStatus === 'reviewed' && (
+          {document.reviewStatus === 'reviewed_source_link' && (
             <span className="text-xs font-sans text-status-official flex items-center gap-1">
               <span className="inline-block w-1.5 h-1.5 rounded-full bg-status-official" aria-hidden="true" />
               Reviewed

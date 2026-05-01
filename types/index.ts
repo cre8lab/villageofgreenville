@@ -168,6 +168,18 @@ export interface ChangeLogEntry {
   linkToSource: string | null
 }
 
+// ─── Staff directory ──────────────────────────────────────────────────────────
+
+export interface StaffMember {
+  id: string
+  name: string
+  title: string
+  department: string
+  email: string | null
+  sourceId: string
+  lastVerified: string
+}
+
 // ─── Growth signals ───────────────────────────────────────────────────────────
 
 export type GrowthSignalStatus =

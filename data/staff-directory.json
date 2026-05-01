@@ -1,0 +1,110 @@
+[
+  {
+    "id": "travis-parish",
+    "name": "Travis Parish",
+    "title": "Administrator",
+    "department": "Administration",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "katrina-knuth",
+    "name": "Katrina Knuth",
+    "title": "Interim Village Clerk",
+    "department": "Administration",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "lisa-beyer",
+    "name": "Lisa Beyer",
+    "title": "Village Treasurer",
+    "department": "Finance",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "mark-mommaerts",
+    "name": "Mark Mommaerts",
+    "title": "Village Planner",
+    "department": "Planning",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "elisabeth-racine",
+    "name": "Elisabeth Racine",
+    "title": "Chief Building Inspector",
+    "department": "Building Inspection",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "keith-curran",
+    "name": "Keith Curran",
+    "title": "Director of Public Works",
+    "department": "Public Works",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "cody-simonis",
+    "name": "Cody Simonis",
+    "title": "Water & Sewer Superintendent",
+    "department": "Utilities",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "chris-pagels",
+    "name": "Chris Pagels",
+    "title": "Stormwater Utility Superintendent",
+    "department": "Utilities",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "loren-dieck",
+    "name": "Loren Dieck",
+    "title": "Director of Parks and Recreation",
+    "department": "Parks & Recreation",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "eamonn-lenaghan",
+    "name": "Eamonn Lenaghan",
+    "title": "Village Forester / Arborist",
+    "department": "Parks & Recreation",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "eric-kitowski",
+    "name": "Eric Kitowski",
+    "title": "Deputy Chief — Fire Prevention Officer",
+    "department": "Fire & EMS",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "joshua-lambie",
+    "name": "Joshua Lambie",
+    "title": "Captain — Fire Prevention Officer",
+    "department": "Fire & EMS",
+    "email": null,
+    "sourceId": "greenville-staff",
+    "lastVerified": "2026-05-01"
+  }
+]

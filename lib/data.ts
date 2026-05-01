@@ -6,6 +6,7 @@ import editorialStandardsData from '@/data/editorial-standards.json'
 import sourceHealthData from '@/data/source-health.json'
 import changeLogData from '@/data/change-log.json'
 import growthSignalsData from '@/data/growth-signals.json'
+import staffDirectoryData from '@/data/staff-directory.json'
 
 import type {
   Source,
@@ -16,6 +17,7 @@ import type {
   SourceHealth,
   ChangeLogEntry,
   GrowthSignal,
+  StaffMember,
 } from '@/types'
 
 // ─── Sources ─────────────────────────────────────────────────────────────────
@@ -98,4 +100,21 @@ export function getGrowthSignals(): GrowthSignal[] {
 
 export function getGrowthSignalById(id: string): GrowthSignal | undefined {
   return (growthSignalsData as GrowthSignal[]).find((g) => g.id === id)
+}
+
+// ─── Staff directory ──────────────────────────────────────────────────────────
+
+export function getStaffDirectory(): StaffMember[] {
+  return staffDirectoryData as StaffMember[]
+}
+
+export function getStaffByDepartment(): Record<string, StaffMember[]> {
+  return (staffDirectoryData as StaffMember[]).reduce(
+    (acc, member) => {
+      if (!acc[member.department]) acc[member.department] = []
+      acc[member.department].push(member)
+      return acc
+    },
+    {} as Record<string, StaffMember[]>
+  )
 }

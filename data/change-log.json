@@ -1,5 +1,27 @@
 [
   {
+    "id": "chg-007",
+    "changeTitle": "Staff Directory indexed — 12 Village staff contacts across 7 departments",
+    "sourceId": "greenville-staff",
+    "changeType": "document_indexed",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "The Village Staff Directory was reviewed and 12 staff contacts were indexed across 7 departments: Administration, Finance, Planning, Building Inspection, Public Works, Utilities, Parks & Recreation, and Fire & EMS. Personal contact details (phone, email) are not republished on this site. Department and title information only.",
+    "linkToSource": "https://www.townofgreenville.com/government/staff_directory.php"
+  },
+  {
+    "id": "chg-006",
+    "changeTitle": "Legal Notices index expanded — 4 additional 2026 documents catalogued",
+    "sourceId": "greenville-legal-notices",
+    "changeType": "document_indexed",
+    "dateDetected": "2026-05-01",
+    "publicStatus": "published",
+    "reviewStatus": "human_reviewed",
+    "summary": "Four additional 2026 documents were identified on the Village Legal Notices page and added to the public records index: Resolution No. 8-26 (Special Exception — Home Business), Resolution No. 10-26 (CSM Approval), Ordinance No. 4-26 (Zoning Map Amendment, February), and an RFQ for Legal Services (January). All are indexed as official_document_posted. Formal adoption status has not been independently verified against meeting minutes.",
+    "linkToSource": "https://www.townofgreenville.com/government/legal_notices_and_postings.php"
+  },
+  {
     "id": "chg-001",
     "changeTitle": "Legal Notices page indexed — 5 documents from 2026 catalogued",
     "sourceId": "greenville-legal-notices",

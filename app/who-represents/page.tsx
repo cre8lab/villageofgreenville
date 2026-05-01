@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getCivicRoster, getSources } from '@/lib/data'
+import { getCivicRoster, getSources, getStaffByDepartment, getSourceById } from '@/lib/data'
 import CivicRosterTable from '@/components/CivicRosterTable'
 import SourceBadge from '@/components/SourceBadge'
 
@@ -9,13 +9,31 @@ export const metadata: Metadata = {
     'Current Village Board members for Greenville, Wisconsin — offices, names, term notes, and official source links.',
 }
 
+const departmentOrder = [
+  'Administration',
+  'Finance',
+  'Planning',
+  'Building Inspection',
+  'Public Works',
+  'Utilities',
+  'Parks & Recreation',
+  'Fire & EMS',
+]
+
 export default function WhoRepresentsPage() {
   const roster = getCivicRoster()
   const sources = getSources()
+  const staffByDept = getStaffByDepartment()
+  const staffSource = getSourceById('greenville-staff')
 
   const boardsSource = sources.find((s) => s.id === 'greenville-boards')
   const electionsSource = sources.find((s) => s.id === 'greenville-elections')
   const myvoteSource = sources.find((s) => s.id === 'myvote-elected-officials')
+
+  const orderedDepts = [
+    ...departmentOrder.filter((d) => staffByDept[d]),
+    ...Object.keys(staffByDept).filter((d) => !departmentOrder.includes(d)),
+  ]
 
   return (
     <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
@@ -101,6 +119,58 @@ export default function WhoRepresentsPage() {
                   {myvoteSource.note}
                 </p>
               )}
+            </div>
+          </section>
+
+          {/* Staff Directory */}
+          <section>
+            <div className="flex items-center justify-between mb-4">
+              <div className="civic-rule flex-1">
+                <h2 className="font-serif text-2xl font-semibold text-navy pt-4">Village Staff</h2>
+              </div>
+              {staffSource && (
+                <SourceBadge tier={staffSource.trustTier} url={staffSource.url} className="ml-4 flex-shrink-0" />
+              )}
+            </div>
+            <p className="font-sans text-sm text-warm-text leading-relaxed mb-6">
+              Village departments and staff contacts, sourced from the official Village Staff Directory.
+              For official contact information including phone numbers and emails, visit the Village website
+              directly.
+            </p>
+            <div className="space-y-6">
+              {orderedDepts.map((dept) => (
+                <div key={dept}>
+                  <p className="font-sans text-xs font-bold uppercase tracking-wider text-warm-muted mb-2">
+                    {dept}
+                  </p>
+                  <div className="card divide-y divide-warm-border">
+                    {staffByDept[dept].map((member) => (
+                      <div key={member.id} className="flex items-center justify-between px-4 py-3 gap-4">
+                        <span className="font-sans text-sm font-semibold text-navy">{member.name}</span>
+                        <span className="font-sans text-sm text-warm-text text-right">{member.title}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 flex items-center gap-2 text-xs font-sans text-warm-muted">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="flex-shrink-0">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <span>
+                Staff information sourced from{' '}
+                {staffSource ? (
+                  <a href={staffSource.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-1 hover:text-gold transition-colors">
+                    {staffSource.name}
+                  </a>
+                ) : (
+                  'official Village Staff Directory'
+                )}
+                . Personal contact details are not displayed on this site.
+              </span>
             </div>
           </section>
 
