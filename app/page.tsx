@@ -90,11 +90,13 @@ export default function HomePage() {
 
             {/* Main heading */}
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-navy leading-[1.05] tracking-tight mb-6 text-balance">
-              The Community Record
+              Greenville&rsquo;s public record, organized for residents.
             </h1>
 
             <p className="font-sans text-lg md:text-xl text-warm-text leading-relaxed mb-8 max-w-2xl">
-              A community record built on facts, public sources, and respect for Greenville residents.
+              VillageOfGreenville.com is an independent community record for Greenville, Wisconsin —
+              organizing local history, civic records, public decisions, and growth signals from
+              source-linked public information.
             </p>
 
             {/* Independence notice */}
@@ -187,6 +189,45 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Methodology Strip ── */}
+      <section className="border-y border-warm-border bg-cream">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-14">
+          <div className="mb-8">
+            <p className="section-label mb-2">How It Works</p>
+            <h2 className="font-serif text-2xl font-semibold text-navy">
+              How the Community Record Works
+            </h2>
+          </div>
+          <ol className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { step: '01', label: 'Public source identified', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' },
+              { step: '02', label: 'Record registered', icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2' },
+              { step: '03', label: 'Change detected or manually reviewed', icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z' },
+              { step: '04', label: 'Facts extracted and labeled', icon: 'M7 7h.01M7 3h5a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h2zM16 16l4 4M16 20l4-4' },
+              { step: '05', label: 'Human review completed', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
+              { step: '06', label: 'Plain-English record published', icon: 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253' },
+            ].map((item, idx, arr) => (
+              <li key={item.step} className="flex flex-col gap-3 relative">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-full bg-navy flex items-center justify-center flex-shrink-0">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-gold">
+                      <path d={item.icon} />
+                    </svg>
+                  </div>
+                  {idx < arr.length - 1 && (
+                    <div className="hidden lg:block flex-1 h-px bg-warm-border" aria-hidden="true" />
+                  )}
+                </div>
+                <div>
+                  <span className="font-sans text-[0.6rem] font-bold tracking-wider uppercase text-gold block mb-0.5">{item.step}</span>
+                  <p className="font-sans text-xs font-medium text-navy leading-snug">{item.label}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

@@ -22,7 +22,7 @@ export default function TimelinePage() {
           Greenville Timeline
         </h1>
         <p className="font-sans text-lg text-warm-text leading-relaxed mb-6">
-          A record of key events in the development of Greenville, Wisconsin — from earliest settlement through incorporation as a Village. All events are sourced or noted when a primary source has not yet been documented.
+          A record of key events in the development of Greenville, Wisconsin — from earliest settlement through incorporation as a Village in 2021. All current events are sourced to the official Village Our Community page.
         </p>
         <div className="card p-4 inline-flex items-start gap-3">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="text-gold mt-0.5 flex-shrink-0">
@@ -31,7 +31,7 @@ export default function TimelinePage() {
             <line x1="12" y1="16" x2="12.01" y2="16" />
           </svg>
           <p className="font-sans text-sm text-warm-text">
-            <span className="font-semibold text-navy">Source status:</span> Events marked &ldquo;Source not yet documented&rdquo; are drawn from general historical knowledge and have not been verified against a primary source. They are flagged for future review.
+            <span className="font-semibold text-navy">Source:</span> All four timeline events are sourced to the official Village of Greenville Our Community page, last verified 2026-05-01. Future events will include source documentation before publication.
           </p>
         </div>
       </div>
