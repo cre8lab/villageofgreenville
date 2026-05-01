@@ -60,7 +60,9 @@ export default function PublicRecordsPage() {
               </div>
             </div>
             <div className="ml-auto">
-              <StatusBadge status="adopted" />
+              <span className="inline-flex items-center px-2 py-0.5 rounded text-[0.65rem] font-sans font-bold tracking-wider uppercase bg-status-official-bg text-status-official border border-status-official-border">
+                Official Documents Posted
+              </span>
             </div>
           </div>
 

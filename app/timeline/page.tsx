@@ -31,7 +31,7 @@ export default function TimelinePage() {
             <line x1="12" y1="16" x2="12.01" y2="16" />
           </svg>
           <p className="font-sans text-sm text-warm-text">
-            <span className="font-semibold text-navy">Source:</span> All four timeline events are sourced to the official Village of Greenville Our Community page, last verified 2026-05-01. Future events will include source documentation before publication.
+            All current timeline entries are source-linked. Future entries without primary documentation will be clearly labeled for review.
           </p>
         </div>
       </div>

@@ -170,9 +170,9 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Sources monitored */}
+          {/* Registered sources */}
           <div>
-            <h2 className="font-serif text-xl font-semibold text-navy mb-4">Sources Monitored</h2>
+            <h2 className="font-serif text-xl font-semibold text-navy mb-4">Registered Sources</h2>
             <div className="space-y-2">
               {sources.map((s) => (
                 <div key={s.id} className="card p-3">
