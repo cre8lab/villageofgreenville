@@ -1,0 +1,57 @@
+[
+  {
+    "id": "jack-anderson",
+    "name": "Jack Anderson",
+    "office": "Village President",
+    "status": "current_official",
+    "termNote": "Elected April 2025",
+    "electedYear": 2025,
+    "email": null,
+    "sourceId": "greenville-boards",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "andy-peters",
+    "name": "Andy Peters",
+    "office": "Trustee",
+    "status": "current_official",
+    "termNote": "Elected April 2025",
+    "electedYear": 2025,
+    "email": null,
+    "sourceId": "greenville-boards",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "dean-culbertson",
+    "name": "Dean Culbertson",
+    "office": "Trustee",
+    "status": "current_official",
+    "termNote": "Elected April 2025",
+    "electedYear": 2025,
+    "email": null,
+    "sourceId": "greenville-boards",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "mark-strobel",
+    "name": "Mark Strobel",
+    "office": "Trustee",
+    "status": "current_official",
+    "termNote": "Elected April 2026",
+    "electedYear": 2026,
+    "email": null,
+    "sourceId": "greenville-boards",
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "brittany-helf",
+    "name": "Brittany Helf",
+    "office": "Trustee",
+    "status": "current_official",
+    "termNote": "Elected April 2026",
+    "electedYear": 2026,
+    "email": null,
+    "sourceId": "greenville-boards",
+    "lastVerified": "2026-05-01"
+  }
+]

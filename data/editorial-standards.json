@@ -1,0 +1,50 @@
+[
+  {
+    "id": "official-sources",
+    "title": "We prioritize official and primary sources",
+    "body": "Official government websites, statutory documents, and certified public records take precedence over secondary or community-submitted information. All sources are labeled with a trust tier so readers can evaluate the basis of any claim.",
+    "icon": "source"
+  },
+  {
+    "id": "facts-context",
+    "title": "We separate facts from context",
+    "body": "Facts are stated plainly, with numbers and dates when available. Context, explanation, or background is clearly labeled as such and kept distinct from the factual record. We do not editorialize within factual summaries.",
+    "icon": "facts"
+  },
+  {
+    "id": "label-uncertainty",
+    "title": "We label uncertainty",
+    "body": "When information is unverified, contested, or drawn from a non-primary source, we say so. Status labels such as needs_review, unofficial, and pending are applied consistently. We would rather display a gap than fill it with a guess.",
+    "icon": "uncertainty"
+  },
+  {
+    "id": "ai-use",
+    "title": "We use AI carefully",
+    "body": "Artificial intelligence assists in organizing, summarizing, and drafting content on this site. Public-facing summaries require human review before publication. AI-generated content is never auto-published as factual claims. This site's use of AI is a tool for organization, not a replacement for sourced research.",
+    "icon": "ai"
+  },
+  {
+    "id": "review-required",
+    "title": "Public-facing summaries require review before publication",
+    "body": "No automated process publishes content directly to this site without a review step. Changes to the public record, new document summaries, and updates to the civic roster are verified against official sources before appearing on public pages.",
+    "icon": "review"
+  },
+  {
+    "id": "corrections",
+    "title": "We welcome corrections with sources",
+    "body": "If information on this site is inaccurate, outdated, or missing important context, we want to know. Corrections should come with a source — a public document, official page, or primary reference. We will review, update, and credit the correction.",
+    "icon": "correction"
+  },
+  {
+    "id": "respect",
+    "title": "We respect Greenville residents",
+    "body": "This site does not collect or display residential addresses, even when they appear on official public pages. We link residents to authoritative state tools like MyVote Wisconsin rather than aggregating personal details. We treat information about private individuals with care proportional to its public interest.",
+    "icon": "respect"
+  },
+  {
+    "id": "independence",
+    "title": "We are independent and not affiliated with the official Village government",
+    "body": "VillageOfGreenville.com is an independent community record site. It is not operated by, affiliated with, or endorsed by the official Village of Greenville government. For official government services, visit greenvillewi.gov.",
+    "icon": "independence"
+  }
+]

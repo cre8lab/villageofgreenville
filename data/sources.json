@@ -1,0 +1,122 @@
+[
+  {
+    "id": "greenville-main",
+    "name": "Village of Greenville — Official Website",
+    "url": "https://greenvillewi.gov/",
+    "type": "official_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "html_change_detection",
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "greenville-boards",
+    "name": "Boards and Commissions — Village of Greenville",
+    "url": "https://www.townofgreenville.com/government/boards_and_commissions.php",
+    "type": "official_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "html_change_detection",
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "greenville-staff",
+    "name": "Staff Directory — Village of Greenville",
+    "url": "https://www.townofgreenville.com/government/staff_directory.php",
+    "type": "official_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "html_change_detection",
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "greenville-legal-notices",
+    "name": "Legal Notices and Postings — Village of Greenville",
+    "url": "https://www.townofgreenville.com/government/legal_notices_and_postings.php",
+    "type": "official_document_center",
+    "trustTier": "primary_official",
+    "monitoringMethod": "document_link_detection",
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "greenville-elections",
+    "name": "Elections — Village of Greenville",
+    "url": "https://www.townofgreenville.com/government/elections.php",
+    "type": "official_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "html_change_detection",
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "outagamie-election-results",
+    "name": "Outagamie County Election Results",
+    "url": "https://www.outagamie.gov/Our-County/County-Clerk/Elections/Outagamie-County-Election-Results",
+    "type": "official_county_webpage",
+    "trustTier": "primary_official",
+    "monitoringMethod": "document_link_detection",
+    "note": "Election-night results are unofficial until certified by the county canvass board.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "myvote-election-results",
+    "name": "MyVote Wisconsin — Election Results",
+    "url": "https://myvote.wi.gov/en-us/Election-Results",
+    "type": "state_official_reference",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Wisconsin does not publish certified election-night results statewide. Winners are never officially certified on election night.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "myvote-elected-officials",
+    "name": "MyVote Wisconsin — My Elected Officials",
+    "url": "https://myvote.wi.gov/en-us/My-Elected-Officials",
+    "type": "state_official_lookup",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": "Results are determined by address. This site does not collect resident addresses — link residents to MyVote directly.",
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "greenville-gis",
+    "name": "Greenville GIS / ArcGIS Hub",
+    "url": "https://village-of-greenville-greenville-wi.hub.arcgis.com/",
+    "type": "official_gis_hub",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "outagamie-gis",
+    "name": "Outagamie County GIS Maps & Property Information",
+    "url": "https://www.outagamie.gov/County-Services/Development-Land-Services/GIS-Maps-Property-Information",
+    "type": "county_gis",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "wi-doa-population",
+    "name": "Wisconsin DOA — Population Estimates",
+    "url": "https://doa.wi.gov/Pages/LocalGovtsGrants/Population_Estimates.aspx",
+    "type": "state_data",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": null,
+    "lastChecked": "2026-05-01"
+  },
+  {
+    "id": "wi-dor-taxes",
+    "name": "Wisconsin DOR — Town, Village and City Taxes",
+    "url": "https://www.revenue.wi.gov/Pages/RA/TVC-Taxes.aspx",
+    "type": "state_data",
+    "trustTier": "primary_official",
+    "monitoringMethod": null,
+    "note": null,
+    "lastChecked": "2026-05-01"
+  }
+]

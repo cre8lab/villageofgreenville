@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand palette */
+  --cream: #F2EFE5;
+  --navy: #162B44;
+  --navy-dark: #0F1E30;
+  --navy-light: #243F5F;
+  --gold: #A8721E;
+  --gold-light: #C28E35;
+  --gold-muted: #E2C98A;
+  --gold-pale: #F7F0DC;
+
+  /* Typography */
+  --text-primary: #1C1C2C;
+  --text-secondary: #4A4A5A;
+  --text-muted: #7A7A8A;
+
+  /* Surfaces */
+  --bg-body: #F2EFE5;
+  --bg-card: #FDFBF5;
+  --bg-inset: #EAE6D8;
+
+  /* Borders */
+  --border: #D2CCBC;
+  --border-strong: #AFA898;
+
+  /* Status palette */
+  --official: #155A38;
+  --official-bg: #E5F4ED;
+  --official-border: #9ACFB4;
+  --pending: #8B4500;
+  --pending-bg: #FEF3E2;
+  --pending-border: #F0BE78;
+  --superseded: #7F1414;
+  --superseded-bg: #FDEBEB;
+  --superseded-border: #F0A8A8;
+  --unofficial: #173B7A;
+  --unofficial-bg: #EBF0FF;
+  --unofficial-border: #A8BEF5;
+  --adopted: #155A38;
+  --adopted-bg: #E5F4ED;
+  --adopted-border: #9ACFB4;
+  --needs-review: #6B4000;
+  --needs-review-bg: #FEF0D8;
+  --needs-review-border: #EDB968;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--cream);
+    color: var(--text-primary);
+    font-family: var(--font-mulish), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-spectral), Georgia, serif;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.15s ease;
+  }
+
+  a:hover {
+    color: var(--gold);
+  }
+}
+
+@layer components {
+  /* Civic gold rule — a thin accent line used as a heading decoration */
+  .civic-rule {
+    position: relative;
+    padding-top: 0.75rem;
+  }
+  .civic-rule::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2px;
+    background-color: var(--gold);
+  }
+
+  /* Full-width version */
+  .civic-rule-full::before {
+    width: 100%;
+  }
+
+  /* Section label — small uppercase category marker */
+  .section-label {
+    font-family: var(--font-mulish), system-ui, sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* Card base */
+  .card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .card:hover {
+    border-color: var(--border-strong);
+  }
+
+  /* Inset block — for notices, callouts */
+  .inset-block {
+    background-color: var(--bg-inset);
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.25rem;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Table styles */
+  .civic-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .civic-table th {
+    font-family: var(--font-mulish), system-ui, sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    padding: 0.625rem 1rem;
+    border-bottom: 2px solid var(--border-strong);
+    text-align: left;
+  }
+
+  .civic-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    color: var(--text-primary);
+  }
+
+  .civic-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .civic-table tr:hover td {
+    background-color: var(--gold-pale);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Grain texture overlay */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
